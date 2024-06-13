@@ -4,6 +4,7 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .3);
 }
 
 header nav {
@@ -233,7 +234,8 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    font-weight: 500;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {

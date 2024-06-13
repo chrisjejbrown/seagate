@@ -3,13 +3,14 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 16px;
 }
 
 .cards > ul > li {
   border: 1px solid var(--dark-color);
-  background-color: var(--background-color)
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+  color: var(--color-base);
 }
 
 .cards .cards-card-body {

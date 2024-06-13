@@ -1,6 +1,7 @@
 footer {
   padding: 2rem;
-  background-color: var(--light-color);
+  color: #FFF;
+  background-color: #101010;
   font-size: var(--body-font-size-s);
 }
 
@@ -11,4 +12,17 @@ footer .footer {
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer a:any-link {
+  color: #FFF;
+}
+
+footer .footer img {
+  width: unset;
+  padding: 10px;
+}
+
+footer .columns > div {
+  align-items: start;
 }

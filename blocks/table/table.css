@@ -2,13 +2,15 @@
   width: 100%;
   overflow-x: auto;
   border: 1px solid;
+  border-color: #f3f3f3;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
 }
 
 .table table {
   width: 100%;
   max-width: 100%;
   border-collapse: collapse;
-  border-color: lightgray;
+  border-color: #f3f3f3;
   font-size: var(--body-font-size-xs);
 }
 
@@ -27,19 +29,24 @@
 .table table thead tr {
   border-top: none;
   border-bottom: 1px solid;
+  border-color: #f3f3f3;
 }
 
 .table table tbody tr {
   border-bottom: 1px solid;
+  border-color: #f3f3f3;
 }
 
 .table table th {
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .table table th, .table table td {
-  padding: 8px 16px;
-  text-align: left;
+  padding: 48px 48px;
+  max-width: 24px;
+  text-align: center;
+  border-right: 1px solid;
+  border-color: #f3f3f3;
 }
 
 /* striped variant */
