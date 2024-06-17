@@ -110,13 +110,6 @@ export function decorateMain(main) {
  */
 async function loadEager(doc) {
   document.documentElement.lang = 'en';
-  decorateTemplateAndTheme();
-  const main = doc.querySelector('main');
-  if (main) {
-    decorateMain(main);
-    document.body.classList.add('appear');
-    await waitForLCP(LCP_BLOCKS);
-  }
 
   // Add below snippet early in the eager phase
   if (getMetadata('experiment')
@@ -126,6 +119,15 @@ async function loadEager(doc) {
     const { loadEager: runEager } = await import('../plugins/experimentation/src/index.js');
     await runEager(document, { audiences: AUDIENCES }, pluginContext);
   }
+  decorateTemplateAndTheme();
+  const main = doc.querySelector('main');
+  if (main) {
+    decorateMain(main);
+    document.body.classList.add('appear');
+    await waitForLCP(LCP_BLOCKS);
+  }
+
+
 
   try {
     /* if desktop (proxy for fast connection) or fonts already loaded, load fonts.css */
