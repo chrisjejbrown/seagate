@@ -51,6 +51,29 @@
   text-decoration: underline;
 }
 
+.table table th a.button:any-link {
+  color: #000;
+  background-color: #FFF;
+  font-size: var(--body-font-size-m);
+  font-family: var(--body-font-family);
+  line-height: 1.6;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+.table table td a.button:any-link {
+  color: #000;
+  background-color: #FFF;
+  font-size: var(--body-font-size-m);
+  font-family: var(--body-font-family);
+  line-height: 1.6;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: underline;
+  padding: 0;
+}
+
 /* striped variant */
 .table.striped tbody tr:nth-child(odd) {
   background-color: var(--overlay-background-color);
