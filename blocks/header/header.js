@@ -1,4 +1,4 @@
-import { getMetadata } from '../../scripts/aem.js';
+import { getMetadata, decorateIcons, loadBlocks } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
@@ -141,8 +141,17 @@ export default async function decorate(block) {
   toggleMenu(nav, navSections, isDesktop.matches);
   isDesktop.addEventListener('change', () => toggleMenu(nav, navSections, isDesktop.matches));
 
+  decorateIcons(nav);
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
   navWrapper.append(nav);
+  const form = nav.querySelector('.form');
+  if (form) {
+    form.classList.add('block');
+    form.setAttribute('data-block-name', 'form');
+    loadBlocks(nav).then(() => {
+      form.style.setProperty('display', 'block');
+    });
+  }
   block.append(navWrapper);
 }

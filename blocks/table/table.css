@@ -1,5 +1,6 @@
 .table {
-  width: 100%;
+  width: 980px;
+  margin: auto;
   overflow-x: auto;
   border: 1px solid;
   border-color: #f3f3f3;
@@ -47,6 +48,7 @@
   text-align: center;
   border-right: 1px solid;
   border-color: #f3f3f3;
+  text-decoration: underline;
 }
 
 /* striped variant */
