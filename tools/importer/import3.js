@@ -113,7 +113,7 @@ const createMetadata = (main, document) => {
   
       // final cleanup
       WebImporter.DOMUtils.remove(main, [
-          '.cm-skiplinks', '.breadcrumb', '.global-footer'
+          '.cm-skiplinks', '.breadcrumb', '.global-footer', '.navbar-wrapper', '.mobile-jump-nav-menu'
       ]);
   
       // create the hero block and append it to the main element
