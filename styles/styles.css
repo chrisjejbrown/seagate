@@ -46,11 +46,10 @@
 --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono", monospace;
 
 /* colors */
-/* colors */
 --text-color: #000000;
 --link-color: #467c2d;
 --background-color: #ffffff;
---overlay-background-color: #6EBE49;
+--background-color: #6EBE49;
 --highlight-background-color: #cccccc;
 
 /* sizes */
